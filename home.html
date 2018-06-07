@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>Hello</title>
+    <h1>Hello World!</h1>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/png">
+  </head>
+  <body>
+    <p><a href="http://htmlbook.ru/html/a">Ирка моя радость</a></p>
+
+    <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="#" class="navbar-brand">New</a>
+        </div>
+
+        <div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Main</a></li>
+            <li><a href="#">Story about b#@!hs</a></li>
+            <li><a href="#">More</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <div class="container-fluid">
+      <h1>Test</h1>
+
+      <div class="row">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2" id="F">First</div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" id="S">Second</div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5" id="T">Third</div>
+      </div>
+    </div>
+
+    <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Open the window</button> -->
+
+    <table id="mainTable" class="table table-bordered table-hover">
+      <thead class="thead-dark">
+        <tr   class="info">
+          <th>Name</th>
+          <th>Mobile Number</th>
+          <th>Maile</th>
+          <th><button  id='modal' type="button" class="btn btn-info" data-toggle="modal"  data-target="#modal-1">Добавить</button></th>
+          <!-- <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Open the window</button> -->
+          <!-- btn-warning, btn-danger, btn-link, btn-default, btn- primary -->
+        </tr>
+      <tbody>
+        <tr class="active">
+          <td>Gary Jhonatan</td>
+          <td>+20 123456</td>
+          <td>garycooldude@gmail.com</td>
+          <td>
+            <div class="btn-group-vertical">
+              <button id="Edit"  class="btn btn-warning button-edit" data-toggle="modal"  data-target="#modal-2">Редактировать</button>
+              <button  class="btn  btn-danger button-delete" >Удалить</button>
+               <!-- <td><a href="#" class="row-remove">Удалить</a></td> -->
+              <!-- btn-group-justified  -->
+            <div>
+          </td>
+        </tr>
+        </tbody>
+      </thead>
+    </table>
+
+    <div class="modal fade" id="modal-1" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+           <div class="modal-header">
+             <h4 class="modal-title">Write youre data.</h4>
+             <button class="close" type="button" data-dismiss="modal">&times;</button>
+           </div>
+           <div class="modal-body">
+             <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Youre name & lastname:</label>
+              <input type="text" class="form-control" id="recipient-name">
+              <label for="recipient-name" class="form-control-label">Youre mobile number:</label>
+              <input type="text" class="form-control" id="recipient-number">
+              <label for="recipient-name" class="form-control-label">Youre mail:</label>
+              <input type="text" class="form-control" id="recipient-mail">
+            </div>
+             <!-- <div class="form-group">
+              <label for="message-text" class="form-control-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div> -->
+             <p>This work)</p>
+           </div>
+           <div class="modal-footer">
+            <button  id='buttonAdd' type="button" class="btn btn-info" data-toggle="modal"  data-target="#modal-1">Save</button>
+            <button id="close-btn" class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-2" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+         <div class="modal-header">
+           <h4 class="modal-title">Edit youre data.</h4>
+           <button class="close" type="button" data-dismiss="modal">&times;</button>
+         </div>
+         <div class="modal-body">
+           <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Youre name & lastname:</label>
+            <input type="text" class="form-control" id="recipient-name">
+            <label for="recipient-name" class="form-control-label">Youre mobile number:</label>
+            <input type="text" class="form-control" id="recipient-number">
+            <label for="recipient-name" class="form-control-label">Youre mail:</label>
+            <input type="text" class="form-control" id="recipient-mail">
+          </div>
+           <!-- <div class="form-group">
+            <label for="message-text" class="form-control-label">Message:</label>
+            <textarea class="form-control" id="message-text"></textarea>
+          </div> -->
+           <p>This work)</p>
+         </div>
+         <div class="modal-footer">
+          <button  id='buttonAdd' type="button" class="btn btn-info" data-toggle="modal"  data-target="#modal-1">Save</button>
+          <button id="close-btn" class="btn btn-danger" type="button" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
